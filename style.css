@@ -1,0 +1,335 @@
+/* ===== GOOGLE FONT STYLE ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* ===== BODY ===== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0b1120;
+    color: #ffffff;
+    line-height: 1.7;
+}
+
+/* ===== HEADER ===== */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(10, 15, 35, 0.95);
+    backdrop-filter: blur(12px);
+    padding: 20px 8%;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #38bdf8;
+    letter-spacing: 1px;
+}
+
+/* ===== NAV LINKS ===== */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: 0.3s;
+    position: relative;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    background: #38bdf8;
+    transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 8%;
+    text-align: center;
+    background: linear-gradient(to bottom right, #0b1120, #111827);
+}
+
+.hero-content h1 {
+    font-size: 58px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.hero-content span {
+    color: #38bdf8;
+}
+
+.hero-content h2 {
+    font-size: 32px;
+    color: #facc15;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    max-width: 750px;
+    margin: auto;
+    font-size: 18px;
+    color: #d1d5db;
+}
+
+/* ===== BUTTONS ===== */
+.buttons {
+    margin-top: 35px;
+}
+
+.buttons a {
+    display: inline-block;
+    margin: 10px;
+    padding: 14px 30px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    color: #000;
+    transition: 0.3s;
+    box-shadow: 0 10px 25px rgba(56,189,248,0.2);
+}
+
+.buttons a:hover {
+    transform: translateY(-4px);
+    background: linear-gradient(135deg, #facc15, #f59e0b);
+}
+
+/* ===== SECTIONS ===== */
+.section {
+    padding: 100px 8%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #38bdf8;
+    font-weight: 700;
+}
+
+.section p {
+    color: #d1d5db;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* ===== SKILL CARDS ===== */
+.cards {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    padding: 28px;
+    border-radius: 18px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    backdrop-filter: blur(14px);
+    font-weight: 600;
+    transition: 0.3s;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #38bdf8;
+    box-shadow: 0 15px 35px rgba(56,189,248,0.15);
+}
+
+/* ===== PROJECT SECTION ===== */
+.project-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-box {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 20px;
+    padding: 35px;
+    margin: 30px auto;
+    max-width: 1000px;
+    text-align: left;
+    backdrop-filter: blur(12px);
+    transition: 0.3s;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.15);
+}
+
+.project-box:hover {
+    transform: translateY(-8px);
+    border-color: #38bdf8;
+    box-shadow: 0 20px 40px rgba(56,189,248,0.12);
+}
+
+.project-box h3 {
+    color: #facc15;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.project-box p {
+    color: #d1d5db;
+    font-size: 16px;
+}
+
+/* ===== CONTACT ===== */
+#contact p {
+    margin: 12px 0;
+    font-size: 18px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 35px;
+    background: #0a0f1f;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    color: #9ca3af;
+    font-size: 15px;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 992px) {
+    .hero-content h1 {
+        font-size: 42px;
+    }
+
+    .hero-content h2 {
+        font-size: 26px;
+    }
+
+    .section h2 {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .hero {
+        padding-top: 120px;
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+    }
+
+    .hero-content h2 {
+        font-size: 22px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .buttons a {
+        display: block;
+        margin: 15px auto;
+        width: 220px;
+    }
+
+    .section {
+        padding: 70px 5%;
+    }
+
+    .project-box {
+        padding: 25px;
+    }
+}
+
+/* ===== PROFILE IMAGE (1:1 CIRCULAR DP) ===== */
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #38bdf8;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 10px 25px rgba(56,189,248,0.20);
+}
+
+
+/* ===== PROJECT SCREENSHOTS (FULL VISIBLE) ===== */
+
+.project-img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 14px;
+    object-fit: contain;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.20);
+    transition: 0.3s ease;
+}
+
+.project-img:hover {
+    transform: scale(1.02);
+}
+
+
+/* ===== MOBILE RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+    .profile-img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .project-img {
+        max-width: 95%;
+    }
+}
